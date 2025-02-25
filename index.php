@@ -18,7 +18,7 @@ if (isset($_SESSION['role'])) {
 </head>
 <body>
 <div class="container">
-<h2 class="login-text" style="font-size: 2rem; font-weight: 800;" >Login Akun</h2>
+<h2 class="login-text" style="font-size: 2rem; font-weight: 800; " >Login Akun</h2>
     <form action="cek_login.php" method="post" class="login-email">
     <div class="input-group">
                 <input type="email" placeholder="Email" name="email" required>
