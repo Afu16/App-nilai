@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>INPUT DATA</title>
-<link rel="stylesheet" type="text/css" href="tele.css">
+ <link rel="stylesheet" href=".css">
 </head>
 <body>
 
