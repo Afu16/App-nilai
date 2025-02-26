@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         exit();
     } else {
-        echo "Email atau password salah.";
+        echo "<script>alert('Email atau password Anda salah. Silakan coba lagi!'); window.location.href='index.php'; </script>";
     }
 }
 ?>
