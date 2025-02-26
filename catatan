@@ -14,3 +14,19 @@ INSERT INTO users (nama, email, password, role) VALUES
 ('Pak Joko', 'joko@example.com', MD5('guru123'), 'guru');
 
 -- buat database di phpmyadmin secara manual jika belum ada database
+
+CREATE DATABASE data_nilai;
+USE data_nilai;
+
+CREATE TABLE nilais (
+    id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    nilai_harian INT(3) NOT NULL,
+    ulangan_H1 INT(3) NOT NULL,
+    ulangan_H2 INT(3) NOT NULL,
+    nilai_SA INT(3) NOT NULL,
+    nilai_rata VARCHAR(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    created_at TIMESTAMP NULL DEFAULT NULL,
+    updated_at TIMESTAMP NULL DEFAULT NULL
+);
+-- buat CRUD NILAI di phpmyadmin
