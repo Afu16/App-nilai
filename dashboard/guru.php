@@ -20,7 +20,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'guru') {
     <div class="sidebar">
         <a href="../profil/profilguru.php"><i class="fas fa-user"></i> Profil</a>
         <a href="../mapel/mapelsiswa.php"><i class="fas fa-book-open"></i> Mapel</a>
-        <a href="../crud/index1.php"><i class="fas fa-chart-bar"></i> Nilai</a>
+        <a href="../crud/index2.php"><i class="fas fa-chart-bar"></i> Nilai</a>
     </div>
 
     <!-- Konten Utama -->
