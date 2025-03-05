@@ -18,8 +18,8 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'siswa') {
 
     <!-- Sidebar Menu Kiri -->
     <div class="sidebar">
-        <a href="profil.php"><i class="fas fa-user"></i> Profil</a>
-        <a href="materi.php"><i class="fas fa-book"></i> Materi</a>
+        <a href="../profil/profilsiswa.php"><i class="fas fa-user"></i> Profil</a>
+        <a href="../materi/materisiswa.php"><i class="fas fa-book"></i> Materi</a>
         <!-- <a href="tugas.php"><i class="fas fa-tasks"></i> Tugas</a> -->
         <a href="../crud/index.php"><i class="fas fa-trophy"></i> Nilai</a>
 
@@ -31,6 +31,13 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'siswa') {
         <div class="dashboard">
             <h2>Selamat datang, <?php echo $_SESSION['nama']; ?></h2>
             <i class="fas fa-user-graduate role-icon"></i>
+        </div>
+        <div class="">
+        <h2>TAHUN AJARAN</h2>
+        <p>2025-2026</p>
+        
+        <h2>SEMESTER</h2>
+        <p>GENAP</p>
         </div>
     </div>
 

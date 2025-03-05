@@ -177,9 +177,9 @@ if(isset($update)){
 </table>
 
 
-<!-- <footer>
+<footer>
     <p>&copy; 2025 by Kelompok 2</p>
-</footer> -->
+</footer>
 
 </body>
 </html>

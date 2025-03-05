@@ -18,9 +18,9 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'guru') {
 
     <!-- Sidebar Menu Kiri -->
     <div class="sidebar">
-        <a href="profil.php"><i class="fas fa-user"></i> Profil</a>
-        <a href="materi.php"><i class="fas fa-book-open"></i> Mapel</a>
-        <a href="../crud/index1.php"><i class="fas fa-chart-bar"></i> Nilai</a>
+        <a href="../profil/profilguru.php"><i class="fas fa-user"></i> Profil</a>
+        <a href="../mapel/mapelsiswa.php"><i class="fas fa-book-open"></i> Mapel</a>
+        <a href="../crud/index2.php"><i class="fas fa-chart-bar"></i> Nilai</a>
     </div>
 
     <!-- Konten Utama -->
@@ -29,6 +29,13 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'guru') {
         <div class="dashboard">
             <h2>Selamat datang, <?php echo $_SESSION['nama']; ?></h2>
             <i class="fas fa-chalkboard-teacher role-icon"></i>
+        </div>
+        <div class="">
+        <h2>TAHUN AJARAN</h2>
+        <p>2025-2026</p>
+        
+        <h2>SEMESTER</h2>
+        <p>GENAP</p>
         </div>
     </div>
 
