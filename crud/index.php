@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>DATA NILAI</title>
- <link rel="stylesheet" href=".css">
+ <link rel="stylesheet" href="tele.css">
 </head>
 <body>
 
