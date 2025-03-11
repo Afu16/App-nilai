@@ -12,7 +12,7 @@ if (isset($_SESSION['role'])) {
     <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href=".css">
+ <link rel="stylesheet" href="tyle.css">
     <title>Login</title>
 </head>
 <body>
