@@ -44,7 +44,7 @@ $update = @$_POST['tombolupdate'];
         <th>Nilai Rata-Rata</th>
     </tr>
     <?php
-    $panggil = mysqli_query($konek, "SELECT * FROM nilais ORDER BY nama ASC");
+    $panggil = mysqli_query($konek, "SELECT * FROM nilais WHERE `id` =?");
     while($data = mysqli_fetch_array($panggil)){
         ?>
         <tr>
