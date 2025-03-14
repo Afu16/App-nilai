@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>INPUT DATA</title>
-    <link rel="stylesheet" href="tele.css">
+    <link rel="stylesheet" href=".css">
 </head>
 <body>
 
@@ -109,6 +109,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+
+// Hapus Data
+$hapus = @$_GET['delete'];
+if(!empty($hapus)){
+    $sql = mysqli_query($konek, "DELETE FROM nilais WHERE id = '$hapus'");
+    if($sql){
+        echo "<script>alert('Data berhasil dihapus'); document.location.href='index2.php';</script>";
+    } else {
+        echo "<script>alert('Gagal menghapus data');</script>";
+    }
+}
 ?>
 
 <h2>Data Nilai Siswa</h2>
@@ -138,16 +149,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<td>" . $row['ulangan_H2'] . "</td>";
         echo "<td>" . $row['nilai_SA'] . "</td>";
         echo "<td>" . $row['nilai_rata'] . "</td>";
-        // echo "<td> <a href='index2.php?edit=" . $row['id'] . "'>Edit</a></td>";
+  
         echo '<td>
         <a href="index2.php?edit=' . $row['id'] . '">
             <img src="../img/pulpen.png" width="30px" height="30px" alt="tombol edit">
         </a>
              </td>';
-        // echo "<td> <a href='hapus.php?id=" . $row['id'] . "' onclick='return confirm(\"Yakin ingin menghapus?\");'>Hapus</a>
-        //       </td>";
         echo '<td>
-        <a href="hapus.php?id=' . $row['id'] . '" onclick="return confirm(\'Yakin ingin menghapus?\');">
+        <a href="?delete=' . $row['id'] . '" onclick="return confirm(\'Yakin ingin menghapus?\');">
             <img src="../img/buang.png" width="30px" height="30px" alt="tombol hapus">
         </a>
     </td>';
@@ -158,9 +167,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
 </table>
 
-<footer>
+<!-- <footer>
     <p>&copy; 2025 by Kelompok 2</p>
-</footer>
+</footer> -->
 
 </body>
 </html>
